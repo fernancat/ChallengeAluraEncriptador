@@ -1,5 +1,9 @@
 body{
     font-family:"Montserrat", sans-serif;
+    background-image: url("https://wallpapercave.com/uwp/uwp3455328.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 header{
@@ -8,6 +12,18 @@ header{
     justify-content: center;
     width: 100vw;
 }
+h1{
+    font-size: 30px;
+    transition: 1s all;    
+}
+
+h1:hover{
+    transform: scale(0.4) rotate(360deg);
+    opacity: 0.3;
+}
+
+
+
 
 .contenedor-principal{
     width: 100dvw;
@@ -21,6 +37,62 @@ header{
     resize: none;
 }
 
+
+
+
+.textAreaUno{
+    opacity: 0.3;
+    font-weight: bold;
+    box-shadow:  10px 10px 30px 15px black
+
+}
+
+.textAreaUno textarea{
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+textarea::placeholder{
+    color: whitesmoke;
+}
+
+textarea:hover{
+    opacity: 0.5;
+    background-color: black;
+}
+
 .textAreaDos{
+    right: 50px;
+    margin-left: 8%;
+    padding:3% ;
     border: black solid;
+    border-radius: 5%;
+    background-image: url("https://wallpapercave.com/uwp/uwp3455328.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:  10px 10px 30px 15px black
+
+}
+
+.textAreaDos textarea{
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+}
+
+
+button{
+    padding: 3%;
+    color: wheat;
+    border: solid black 10px;
+    border-radius: 5%;
+    background-color: black;
+    transition: 1s all;
+}
+
+button:hover{
+    transform: scale(1.3);
+
 }
