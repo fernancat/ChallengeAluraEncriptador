@@ -17,17 +17,19 @@
             
             <div class="textAreaUno">
                 <form action="">
-                    <textarea name="" id="" cols="50" rows="40" placeholder="Escribe el texto a encriptar aqui"></textarea>
+                    <textarea name="" id="textoArea" cols="50" rows="40" placeholder="Escribe el texto a encriptar aqui"></textarea>
                 </form>
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
     
             <div class="textAreaDos">
                 <form action="">
-                    <textarea name="" id="" cols="40" rows="40" ></textarea>
+                    <textarea name="" id="textoAreaDos" cols="40" rows="40" disabled placeholder="Esperando a recibir un texto encriptado..." ></textarea>
                 </form>
+                <button>Copiar</button>
             </div>
         </main>
+        <script src="../ScriptsPage/app.js"></script>
     </body>
 </html>

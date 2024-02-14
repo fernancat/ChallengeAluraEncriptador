@@ -14,7 +14,8 @@ header{
 }
 h1{
     font-size: 30px;
-    transition: 1s all;    
+    transition: 1s all;
+    color: white;    
 }
 
 h1:hover{
@@ -41,16 +42,18 @@ h1:hover{
 
 
 .textAreaUno{
-    opacity: 0.3;
-    font-weight: bold;
-    box-shadow:  10px 10px 30px 15px black
+    padding:3% ;
+    border: black solid;
+    border-radius: 5%;
+    box-shadow:  10px 10px 30px 15px white;
+
 
 }
 
 .textAreaUno textarea{
     color: white;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.4;
 }
 
 
@@ -64,8 +67,7 @@ textarea:hover{
 }
 
 .textAreaDos{
-    right: 50px;
-    margin-left: 8%;
+    margin-left:8%;
     padding:3% ;
     border: black solid;
     border-radius: 5%;
