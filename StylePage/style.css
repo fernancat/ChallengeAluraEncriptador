@@ -72,7 +72,7 @@ textarea:hover{
     background-image: url("https://wallpapercave.com/uwp/uwp3455328.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow:  10px 10px 30px 15px black
+    box-shadow:  10px 10px 30px 15px white;
 
 }
 
@@ -90,6 +90,8 @@ button{
     border-radius: 5%;
     background-color: black;
     transition: 1s all;
+    box-shadow:  10px 10px 30px 15px darkgreen
+
 }
 
 button:hover{
