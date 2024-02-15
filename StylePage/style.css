@@ -100,3 +100,23 @@ button:hover{
     transform: scale(1.3);
 
 }
+
+h2{
+    color: white;
+}
+
+/*responsive */
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    .contenedor-principal{
+        flex-direction: column;
+    }
+    .textAreaDos, .textAreaUno{
+        margin-top: 5%;
+    }
+    
+}
