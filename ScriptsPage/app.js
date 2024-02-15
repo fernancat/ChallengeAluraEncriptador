@@ -20,22 +20,25 @@ function encriptar(){
    let cadena = "";
    
 
-   for (i = 0; i < textoArea.length; i++){
-      if(diccionario[textoArea[i]] != undefined){
-         console.log(diccionario[textoArea[i]])
-         cadena+= diccionario[textoArea[i]]
-      }else{
-         cadena+=textoArea[i]
+   if (verificarMayuscula()){
+      return
+   }else{
+      for (i = 0; i < textoArea.length; i++){
+         if(diccionario[textoArea[i]] != undefined){
+            cadena+= diccionario[textoArea[i]];
+         }else{
+            cadena+=textoArea[i];
+         }
       }
+      
+      elementoAreaDos.value = cadena;
    }
-   
-   elementoAreaDos.value = cadena
 
 }
 
 
 function desencriptar(texto){
-   textoArea = elementoArea.value
+   textoArea = elementoArea.value;
 
    let textoAreaDos = elementoAreaDos.value;
    let cadena = "";
@@ -50,16 +53,20 @@ function desencriptar(texto){
 }
 
 function copiar(){
-   navigator.clipboard.writeText(elementoAreaDos.value)
-   alert("texto copiado!")
+   navigator.clipboard.writeText(elementoAreaDos.value);
+   alert("texto copiado!");
 }
 
 function verificarMayuscula(){
-   let textoArea = elementoArea.value;
-
-   if (/[A-Z]/.test(textoArea)){
-      return true;
+   textoArea = elementoArea.value
+   for (i =0; i < textoArea.length; i++){
+      if (textoArea[i] != ' ' && textoArea[i] === textoArea[i].toUpperCase()){
+         elementoArea.value = "";
+         alert("No puedes ingresar texto en mayuscula");
+         return true;
+      }
    }
+  
 }
 
 

@@ -1,6 +1,6 @@
 body{
     font-family:"Montserrat", sans-serif;
-    background-image: url("https://wallpapercave.com/uwp/uwp3455328.jpeg");
+    background-image: url("../resourcesPage/fondoPage.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -71,7 +71,7 @@ textarea:hover{
     padding:3% ;
     border: black solid;
     border-radius: 5%;
-    background-image: url("https://wallpapercave.com/uwp/uwp3455328.jpeg");
+    background-image: url("../resourcesPage/fondoPage.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow:  10px 10px 30px 15px white;
